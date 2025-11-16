@@ -1,0 +1,5 @@
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE way)
+target_link_libraries(labwork6 PRIVATE cpr::cpr)
+target_link_libraries(labwork6 PRIVATE nlohmann_json::nlohmann_json)
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})
